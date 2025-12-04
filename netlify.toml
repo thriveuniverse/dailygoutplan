@@ -1,15 +1,10 @@
 [build]
+  base = "."
   publish = "public"
   command = "echo 'No build required'"
 
-# Fix .tsx being served with wrong MIME type
-[[headers]]
-  for = "/*.tsx"
-  [headers.values]
-    Content-Type = "application/javascript"
-
-# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
