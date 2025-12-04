@@ -5,31 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GoutKit Personalized Planner</title>
 
-    <!-- Tailwind CDN + your custom colors (this is what you had before, restored) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-  tailwind.config = {
-    logLevel: 'silent',   // ← this kills the warning
-    theme: {
-      extend: {
-        colors: {
-          brand: {
-            50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
-            400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
-            800: '#075985', 900: '#0c4a6e'
-          },
-          calm: { 50: '#f2fcf5', 100: '#e3f9e9', 500: '#22c55e', 700: '#15803d' },
-          beige: '#F5F2E9',
-          charcoal: '#4A4A4A',
-          teal: '#4A9A8F',
-          coral: '#FF6F61',
-          sage: '#A8C4A0',
-          whiteBox: '#FFFFFF'
-        }
-      }
-    }
-  }
-</script>
     <script>
       tailwind.config = {
         theme: {
@@ -64,8 +40,7 @@
         }
       }
     </script>
-
-    <style>
+	<style>
       @media print {
         .no-print {
           display: none !important;
@@ -79,15 +54,17 @@
       }
     </style>
 
+
+    <!-- Your import map -->
     <script type="importmap">
     {
       "imports": {
-        "react/": "https://aistudiocdn.com/react@^19.2.0/",
         "react": "https://aistudiocdn.com/react@^19.2.0",
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+        "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0"
       }
     }
     </script>
+
 
     <meta name="description" content="Jonathan Kelly's daily gout planner – get your personalized 7-day plan with meals, exercise, and insights based on your triggers and goals. Flare-free living in 30 seconds.">
     <link rel="canonical" href="https://dailygoutplan.com/">
@@ -120,8 +97,24 @@
   gtag('config', 'G-PLDG7L6FT4');
 </script>
   </head>
+
   <body class="bg-beige text-charcoal antialiased selection:bg-brand-200">
     <div id="root"></div>
-    <script type="module" src="/index.js"></script>
+
+    <!-- THIS IS THE ONLY SCRIPT THAT WORKS EVERYWHERE -->
+    <script type="module">
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import App from '/App.tsx';   // ← this is the key: absolute path from root
+
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
+    </script>
   </body>
 </html>
