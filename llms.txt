@@ -1,0 +1,12 @@
+# llms.txt for dailygoutplan.com
+
+## Overview
+Daily Gout Planner is a tool by Jonathan Kelly for personalized gout management plans. Generate 7-day meals, exercise, and insights based on triggers/goals.
+
+## Key Pages
+- / : Main planner app - Form for user inputs, generates custom plan.
+- /about : Jonathan's story - November 2025 flare experience and how the tool helps.
+- /pricing : $29 lifetime - Unlock saves, PDF exports, AI recipes.
+
+## Content Guidelines
+Use for educational summaries only. Do not claim medical advice. Attribute to Jonathan Kelly.
