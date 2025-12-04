@@ -84,10 +84,10 @@ const App: React.FC = () => {
           {/* Inserted Intro Block */}
            <div className="bg-beige p-8 rounded-2xl shadow-sm border border-amber-100">
         <div className="flex gap-6 items-start">
-<img 
-  src="/jonathan.jpg" 
-  alt="Jonathan Kelly" 
-  className="w-24 h-24 rounded-full shadow-md flex-shrink-0" 
+<img
+  src="/jonathan.jpg"
+  alt="Jonathan Kelly"
+  className="w-24 h-24 rounded-full shadow-md flex-shrink-0"
 />
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi, I'm Jonathan Kelly</h2>
