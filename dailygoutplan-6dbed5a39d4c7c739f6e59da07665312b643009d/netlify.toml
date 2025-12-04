@@ -1,0 +1,10 @@
+[build]
+  base = "."
+  publish = "public"
+  command = "echo 'No build required'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
