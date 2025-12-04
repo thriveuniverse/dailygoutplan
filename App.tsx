@@ -88,7 +88,8 @@ const App: React.FC = () => {
   src="/jonathan.jpg" 
   alt="Jonathan Kelly" 
   className="w-24 h-24 rounded-full shadow-md flex-shrink-0" 
-/>          <div className="flex-1">
+/>
+          <div className="flex-1">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi, I'm Jonathan Kelly</h2>
             <p className="text-gray-700 leading-relaxed">
               After my November 2025 flare left me crawling, I built this to stay ahead daily. It pulls 2025 ACR guidelines into a plan just for you—no fluff, just what works. See a sample below, then build yours free.
