@@ -83,17 +83,19 @@ const App: React.FC = () => {
 
           {/* Inserted Intro Block */}
            <div className="bg-beige p-8 rounded-2xl shadow-sm border border-amber-100">
-        <div className="flex gap-6 items-start">
-<img
-  src="/jonathan.jpg"
-  alt="Jonathan Kelly"
-  className="w-24 h-24 rounded-full shadow-md flex-shrink-0"
-/>
-          <div className="flex-1">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi, I'm Jonathan Kelly</h2>
-            <p className="text-gray-700 leading-relaxed">
-              After my November 2025 flare left me crawling, I built this to stay ahead daily. It pulls 2025 ACR guidelines into a plan just for you—no fluff, just what works. See a sample below, then build yours free.
-            </p>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+  <img
+    src="/jonathan.jpg"
+    alt="Jonathan Kelly"
+    className="w-28 h-28 md:w-32 md:h-32 rounded-full shadow-md flex-shrink-0 mx-auto md:mx-0"
+  />
+  <div className="flex-1 text-center md:text-left">
+    <h2 className="text-2xl font-bold text-gray-800 mb-2">Hi, I'm Jonathan Kelly</h2>
+    <p className="text-gray-700 leading-relaxed">
+      After my November 2025 flare left me crawling, I built this to stay ahead daily. 
+      It pulls 2025 ACR guidelines into a plan just for you—no fluff, just what works. 
+      See a sample below, then build yours free.
+    </p>
           </div>
         </div>
             <div className="mt-6 p-4 bg-white rounded-lg border border-brand-100">
